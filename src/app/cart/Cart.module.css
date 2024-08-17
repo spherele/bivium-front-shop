@@ -1,0 +1,32 @@
+.wrapper {
+  margin-top: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 20px;
+
+  max-width: 900px;
+}
+
+.wrapper > * {
+  flex-basis: calc(50% - 10px);
+}
+
+.informationText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  flex-basis: 100%;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    margin-top: 45px;
+    max-width: 100%;
+  }
+
+  .wrapper > * {
+    flex-basis: 100%;
+  }
+}

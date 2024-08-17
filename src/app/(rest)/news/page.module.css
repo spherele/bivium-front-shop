@@ -1,0 +1,33 @@
+.title {
+  font-family: var(--font-fira-sans-extra-condensed);
+  font-size: 46px;
+  color: #3d4143;
+  padding: 20px 0;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.deliveryInfo {
+  margin-top: 69px;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs {
+  margin-left: 40px;
+}
+
+@media (--tablet-media) {
+  .breadcrumbs {
+    margin-left: 0;
+  }
+}

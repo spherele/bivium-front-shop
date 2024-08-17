@@ -1,0 +1,14 @@
+.controlLabel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.controlLabelTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #979797;
+  user-select: none;
+}

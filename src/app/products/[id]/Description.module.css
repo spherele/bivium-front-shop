@@ -1,0 +1,33 @@
+.wrapper {
+  padding-block: 60px;
+}
+
+.title {
+  font-family: var(--font-fira-sans-extra-condensed), sans-serif;
+  font-size: 48px;
+
+  color: #3d4143;
+}
+
+.text {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  color: #3d4143;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    padding-block: 40px 60px;
+  }
+
+  .title {
+    font-family: var(--font-montserrat), sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .text {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

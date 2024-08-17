@@ -1,0 +1,13 @@
+.text a {
+  text-decoration: underline;
+}
+
+.button {
+  padding-inline: 45px !important;
+  margin: 45px auto 0 auto;
+}
+
+.image {
+  margin: 65px auto 0 auto;
+  width: 216px;
+}

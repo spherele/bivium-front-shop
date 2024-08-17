@@ -1,0 +1,82 @@
+.wrapper {
+  padding-bottom: 55px;
+}
+
+.title {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  color: #3d4143;
+}
+
+.emailInput {
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+
+  border-radius: 6px;
+  border: 1px solid #000000;
+}
+
+.products {
+  margin-top: 50px;
+}
+
+.productsTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  color: #3d4143;
+}
+
+.productsBody {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.productsItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.unsubscribeButton {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #3d4143;
+}
+
+@media (--tablet-media) {
+  .pageTitle {
+    font-family: var(--font-montserrat), sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .title {
+    margin-top: 40px;
+  }
+
+  .emailInput {
+    width: 100%;
+  }
+
+  .products {
+    margin-top: 45px;
+  }
+}

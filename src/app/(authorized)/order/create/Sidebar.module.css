@@ -1,0 +1,134 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 45%;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.product {
+  display: flex;
+  column-gap: 10px;
+}
+
+.productImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.productBody {
+  width: 100%;
+}
+
+.productTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3d4143;
+}
+
+.productProperties {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+
+.productPropertiesItem {
+  display: flex;
+  column-gap: 5px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+
+  color: #3d4143;
+}
+
+.productPropertiesItemName {
+  font-weight: 800;
+}
+
+.productPropertiesItemValue {
+  font-weight: 500;
+}
+
+.productPrice {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+  color: #3d4143;
+}
+
+.summary {
+  margin-top: 20px;
+  padding-block: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+}
+
+.result {
+  margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 20px;
+}
+
+.resultText {
+  font-weight: 600;
+}
+
+.resultPrice {
+  font-weight: 700;
+}
+
+.emailHeader {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #3d4143;
+}
+
+.emailHeader svg {
+  color: #3ab940;
+}
+
+.emailText {
+  margin-top: 15px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #3d4143;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    width: 100%;
+  }
+}

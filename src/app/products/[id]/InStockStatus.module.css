@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.wrapper::before {
+  flex-shrink: 0;
+
+  display: block;
+  content: '';
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 100%;
+  background-color: currentColor;
+}
+
+.inStock {
+  color: #3ab940;
+}
+
+.outOfStock {
+  color: #ed0006;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    font-size: 14px;
+  }
+}

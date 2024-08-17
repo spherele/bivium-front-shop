@@ -1,0 +1,32 @@
+.wrapper {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrapper svg:nth-of-type(2) {
+  display: none;
+}
+
+.wrapper:has(.control:checked) svg:nth-of-type(1) {
+  display: none;
+}
+
+.wrapper:has(.control:checked) svg:nth-of-type(2) {
+  display: block;
+}
+
+.control {
+  display: none;
+}
+
+.text {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}

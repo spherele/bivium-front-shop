@@ -1,0 +1,121 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  flex-grow: 1;
+}
+
+.addressForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+}
+
+.addressFormControl_locality {
+  grid-column: 1 / 3;
+}
+
+.addressFormControl_house,
+.addressFormControl_apartment {
+  grid-row: 3;
+}
+
+.addressFormControl_comment {
+  grid-row: 4;
+  resize: none;
+}
+
+.addressFormControl_saveAddress {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.phonenumberForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.phonenumberFormWrapper,
+.phonenumberFormDeliveryType {
+  margin-top: 30px;
+}
+
+.phonenumberFormTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3d4143;
+}
+
+.phonenumberFormControl {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.phonenumberFormButton {
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.phonenumberFormDescription {
+  margin-top: 10px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #3d4143;
+}
+
+.phonenumberFormDeliveryType {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.surveyDropdown {
+  margin-top: 20px;
+  width: 330px;
+}
+
+.surveyInformationText {
+  margin-top: 10px;
+}
+
+.surveyButton {
+  margin-top: 20px;
+  width: 300px;
+  justify-content: center;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+}
+
+.paymentButton {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (--tablet-media) {
+  .phonenumberForm {
+    grid-template-columns: 1fr;
+  }
+
+  .phonenumberFormButton {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .phonenumberFormWrapper {
+    margin-top: 60px;
+  }
+
+  .phonenumberFormDeliveryType {
+    margin-top: 15px;
+  }
+}

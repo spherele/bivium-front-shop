@@ -1,0 +1,28 @@
+.certificates {
+  display: flex;
+  column-gap: 35px;
+
+  max-width: 75%;
+  margin: 35px auto 0 auto;
+}
+
+.certificatesItemTitle {
+  text-align: center;
+}
+
+.certificatesItemImage {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (--tablet-media) {
+  .certificates {
+    column-gap: 20px;
+    margin-top: 20px;
+    max-width: none;
+  }
+
+  .certificatesItemImage {
+    margin-top: 10px;
+  }
+}

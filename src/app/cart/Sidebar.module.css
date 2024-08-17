@@ -1,0 +1,65 @@
+.wrapper {
+  width: 100%;
+  max-width: 334px;
+}
+
+.title {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.purchases {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #3d4143;
+}
+
+.orderButton {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.informationText {
+  margin-top: 15px;
+}
+
+.summary {
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 20px;
+
+  color: #3d4143;
+}
+
+.summaryText {
+  font-weight: 600;
+}
+
+.summaryPrice {
+  font-weight: 300;
+}
+
+.sslInformation {
+  margin-top: 20px;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    flex-basis: 100%;
+    margin-top: 25px;
+    max-width: 100%;
+  }
+}

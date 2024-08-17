@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+
+.image {
+  width: 500px;
+  aspect-ratio: 1;
+}
+
+.body {
+  margin-left: 50px;
+}
+
+.title {
+  font-family: var(--font-fira-sans-extra-condensed);
+  font-size: 80px;
+  font-weight: 600;
+  color: #000;
+}
+
+.button {
+  margin-top: 40px;
+  width: 335px;
+  justify-content: center;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .body {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 25px;
+  }
+}

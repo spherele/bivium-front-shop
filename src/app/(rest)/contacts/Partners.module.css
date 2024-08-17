@@ -1,0 +1,51 @@
+.wrapper {
+  margin-top: 85px;
+}
+
+.title {
+  font-family: var(--font-fira-sans-extra-condensed), sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.cities {
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.cityTitle {
+  font-family: var(--font-fira-sans-extra-condensed), sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cityContent {
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (--tablet-media) {
+  .cities {
+    margin-top: 30px;
+  }
+
+  .cityTitle {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .cityContent {
+    margin-top: 30px;
+  }
+
+  .cityContent {
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+  }
+}

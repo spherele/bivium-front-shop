@@ -1,0 +1,65 @@
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonText {
+  font-family: var(--font-fira-sans-extra-condensed), sans-serif;
+  font-size: 26px;
+
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.buttonIcon {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+
+.buttonIcon::before,
+.buttonIcon::after {
+  position: absolute;
+
+  top: 50%;
+  right: 50%;
+
+  display: block;
+  content: '';
+
+  border-radius: 2px;
+  background-color: #fff;
+
+  translate: 50% -50%;
+}
+
+.buttonIcon::before {
+  width: 100%;
+  height: 2px;
+}
+
+.buttonIcon::after {
+  width: 2px;
+  height: 100%;
+}
+
+.contentWrapper {
+  height: 0;
+  overflow-y: hidden;
+}
+
+.content {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expanded .button .buttonIcon::after {
+  opacity: 0;
+}
+
+.expanded .contentWrapper {
+  height: auto;
+}

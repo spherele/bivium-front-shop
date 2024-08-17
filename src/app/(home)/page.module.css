@@ -1,0 +1,29 @@
+.wrapper {
+  padding-bottom: 40px;
+}
+
+.ambassadorsProducts {
+  margin-top: 75px;
+}
+
+.deliveryInformation {
+  margin-top: 60px;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    padding-bottom: 35px;
+  }
+
+  .bannerAmbassadors {
+    aspect-ratio: 0.75 !important;
+  }
+
+  .ambassadorsProducts {
+    margin-top: 40px;
+  }
+
+  .deliveryInformation {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,39 @@
+stages:
+  - pull
+  - compile
+
+variables:
+  OKMSG: 'Стенд bivium_front успешно обновлен'
+  FAILMSG: 'Вниманией!Произошла ошибка при обновление стенда bivium_front'
+
+pull master:
+  stage: pull
+  variables:
+    GIT_STRATEGY: none
+  tags:
+    - bivium_front
+  script:
+    - cd /var/www/nextjs
+    - sudo git stash
+    - sudo git fetch
+    - sudo git checkout main
+    - sudo git pull --rebase origin main
+    - echo "OK"
+  only:
+    - main
+
+compile:
+  stage: compile
+  tags:
+    - bivium_front
+  script:
+    - echo "Start Compile"
+    - sudo /root/.nvm/versions/node/v20.14.0/bin/pm2 stop nextjs
+    - cd /var/www/nextjs/
+    - sudo rm .next -r -f
+    - sudo npm install
+    - sudo npm run build
+    - sudo /root/.nvm/versions/node/v20.14.0/bin/pm2 start nextjs
+    - echo "Compile OK"
+  only:
+    - main

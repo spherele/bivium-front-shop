@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    padding-block: 50px;
+    aspect-ratio: 1;
+  }
+
+  .wrapper svg {
+    width: 128px;
+    height: 128px;
+  }
+}

@@ -1,0 +1,50 @@
+.wrapper {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 70px;
+}
+
+.gridItem {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+
+  color: #3d4143;
+}
+
+.gridItemIcon {
+  width: 32px;
+}
+
+.gridItem svg {
+  margin-left: auto;
+  color: #000;
+}
+
+.button {
+  margin: 50px auto 0 auto;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+}

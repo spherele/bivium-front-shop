@@ -1,0 +1,18 @@
+.wrapper {
+  padding-bottom: 40px;
+}
+
+.deliveryInformation {
+  margin-top: 60px;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .deliveryInformation {
+    margin-top: 30px;
+  }
+}

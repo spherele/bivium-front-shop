@@ -1,0 +1,32 @@
+.section + .section {
+  margin-top: 55px;
+}
+
+.sectionTitle {
+  font-family: var(--font-fira-sans-extra-condensed), sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  color: #3d4143;
+}
+
+.sectionTitle + .sectionParagraph {
+  margin-top: 20px;
+}
+
+.sectionParagraph + .sectionParagraph {
+  margin-top: 60px;
+}
+
+@media (--tablet-media) {
+  .section + .section {
+    margin-top: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .sectionParagraph + .sectionParagraph {
+    margin-top: 20px;
+  }
+}

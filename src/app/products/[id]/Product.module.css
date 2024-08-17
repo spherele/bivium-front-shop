@@ -1,0 +1,213 @@
+.wrapper {
+  margin-top: 50px;
+}
+
+.wrapper2 {
+  display: flex;
+  column-gap: 100px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: calc(65% - 100px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.imageWrapper.ambassadorsChoiceBadge::after {
+  position: absolute;
+  padding: 4px 6px;
+
+  display: block;
+  content: 'Выбор амбассадоров';
+
+  top: 0;
+  right: 0;
+
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #fff;
+  background-color: #000;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  position: sticky;
+  top: var(--header-height, 0);
+
+  width: calc(35% - 100px);
+  height: fit-content;
+
+  font-family: var(--font-montserrat), sans-serif;
+  color: #3d4143;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.price {
+  margin-top: 5px;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+}
+
+.properties {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 30px;
+}
+
+.propertiesItem {
+  display: flex;
+  column-gap: 5px;
+}
+
+.propertiesItemName {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.propertiesItemValue {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 30px;
+}
+
+.favoriteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+}
+
+.favoriteButton_active svg {
+  fill: currentColor;
+}
+
+.inStockStatus {
+  margin-top: 25px;
+}
+
+.modal {
+  display: flex;
+  column-gap: 20px;
+}
+
+.modalImage,
+.modalBody {
+  width: calc(50% - 10px);
+  flex-shrink: 0;
+}
+
+.modalImage {
+  width: 279px;
+  max-height: 330px;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.modalBodyTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3d4143;
+}
+
+.modalBodyPrice {
+  margin-top: 5px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+
+  color: #3d4143;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    margin-top: 20px;
+  }
+
+  .wrapper2 {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .body {
+    width: 100%;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .properties {
+    margin-top: 30px;
+    row-gap: 10px;
+  }
+
+  .propertiesItemName,
+  .propertiesItemValue {
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .addToCartButton {
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .modal {
+    flex-direction: column;
+  }
+
+  .modalImage {
+    width: 100%;
+    aspect-ratio: 0.85;
+  }
+
+  .modalBody {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .modalBodyTitle {
+    font-size: 16px;
+  }
+
+  .modalBodyPrice {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}

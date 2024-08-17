@@ -1,0 +1,73 @@
+.wrapper {
+  position: relative;
+}
+
+.wrapper.ambassadorsChoiceBadge::after {
+  z-index: 1;
+  position: absolute;
+  padding: 4px 6px;
+
+  display: block;
+  content: 'Выбор амбассадоров';
+
+  top: 0;
+  right: 0;
+
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #fff;
+  background-color: #000;
+}
+
+.carousel,
+.thumbsCarousel {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.thumbsCarousel {
+  margin-top: 10px;
+}
+
+.carouselWrapper,
+.thumbsCarouselWrapper {
+  display: flex;
+}
+
+.carouselSlide,
+.thumbsCarouselSlide {
+  flex-shrink: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carouselSlide {
+  aspect-ratio: 1;
+  background-size: auto 100%;
+}
+
+.thumbsCarouselSlide {
+  position: relative;
+
+  width: 100px;
+  aspect-ratio: 1;
+
+  background-size: cover;
+}
+
+.thumbsCarouselSlide_active::after {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  display: block;
+  content: '';
+
+  width: 100%;
+  height: 4px;
+
+  background-color: #000;
+}

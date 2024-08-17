@@ -1,0 +1,102 @@
+.wrapper {
+  padding: 20px;
+  z-index: 1;
+
+  width: 340px;
+  max-height: 680px;
+
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #979797;
+
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.filters {
+  margin-top: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filtersButton {
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: 300;
+
+  color: #000;
+  background-color: #dadada;
+
+  border-radius: 6px;
+  border: 1px solid #000;
+}
+
+.filters + .body {
+  margin-top: 20px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 20px;
+  margin-top: 30px;
+}
+
+.textFilters {
+  gap: 15px;
+}
+
+.textFiltersButton {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.textFilters_row,
+.textFilters_column {
+  display: flex;
+}
+
+.textFilters_column {
+  flex-direction: column;
+}
+
+.textFilters_row {
+  flex-wrap: wrap;
+}
+
+.colorFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.colorFiltersButton {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 100%;
+  border: 1px solid #000;
+}

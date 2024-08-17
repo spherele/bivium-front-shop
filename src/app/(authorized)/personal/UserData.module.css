@@ -1,0 +1,72 @@
+.title {
+  margin-bottom: 20px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+
+  color: #000;
+}
+
+.wrapper {
+  padding-bottom: 60px;
+}
+
+.fullname {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.birthday {
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.gender {
+  margin-top: 30px;
+}
+
+.genderWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.phonenumber {
+  margin-top: 30px;
+  width: fit-content;
+}
+
+.email {
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.submitButton {
+  margin-top: 20px;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    padding-bottom: 45px;
+  }
+
+  .fullname {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .gender {
+    margin-top: 50px;
+  }
+
+  .phonenumber {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .email {
+    width: 100%;
+  }
+}

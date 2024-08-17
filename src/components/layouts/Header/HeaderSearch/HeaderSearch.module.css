@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+}
+
+.control {
+  position: absolute;
+  visibility: hidden;
+
+  top: 50%;
+  right: -10px;
+
+  font-size: 20px;
+  font-weight: 300;
+
+  padding: 15px 40px 15px 10px;
+  translate: 0 -50%;
+
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.control::placeholder {
+  opacity: 1;
+  color: #979797;
+}
+
+.control_expanded {
+  visibility: visible;
+}
+
+.button {
+  position: relative;
+}

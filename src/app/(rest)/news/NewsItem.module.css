@@ -1,0 +1,119 @@
+.newsItem {
+  display: flex;
+  align-items: center;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 64px;
+}
+
+.newsItem img {
+  width: 100%;
+  min-width: 640px;
+  max-width: 640px;
+  min-height: 460px;
+  max-height: 460px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.newsItemTitle {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: var(--font-fira-sans-extra-condensed);
+  color: #000;
+}
+
+.newsItemDate,
+.newsItemDescription {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: var(--font-montserrat);
+  color: #000;
+}
+
+.newsItemDescription {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.newsItemDescription.expanded {
+  -webkit-line-clamp: unset;
+  max-height: none;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 460px;
+}
+
+.readMoreButton {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #3d4143;
+  cursor: pointer;
+  background: white;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.readMoreButton::before {
+  content: '';
+  width: 14px;
+  height: 8px;
+  display: flex;
+  background-image: url('data:image/svg+xml,%3Csvg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M13 1L7 7L1 1" stroke="%233D4143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.showButton .readMoreButton {
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+@media (--tablet-media) {
+  .newsItem {
+    display: block;
+    align-items: center;
+    background: white;
+    overflow: hidden;
+    margin-bottom: 64px;
+    width: 100%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .newsItem img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  .newsItemTitle {
+    font-size: 28px;
+  }
+
+  .newsItemDate,
+  .newsItemDescription {
+    font-size: 20px;
+  }
+
+  .readMoreButton {
+    font-size: 18px;
+  }
+}

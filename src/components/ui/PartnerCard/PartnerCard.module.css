@@ -1,0 +1,38 @@
+.wrapper {
+  padding: 10px 20px 30px 20px;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 0px #00000040;
+}
+
+.image {
+  width: fit-content;
+  max-width: 100%;
+  aspect-ratio: 1.35;
+  object-fit: scale-down;
+}
+
+.boldText,
+.thinText {
+  width: fit-content;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 24px;
+}
+
+.boldText {
+  font-weight: 600;
+}
+
+.thinText {
+  font-weight: 400;
+}
+
+.email {
+  font-size: 20px;
+}

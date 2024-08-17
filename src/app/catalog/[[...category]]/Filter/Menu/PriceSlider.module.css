@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.inputsSeparator {
+  flex-grow: 1;
+  height: 1px;
+
+  border-radius: 1px;
+  background-color: #000;
+
+  transform: translateY(9px);
+}
+
+.inputWrapper {
+  max-width: 50%;
+}
+
+.inputTitle {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 500;
+  color: #979797;
+}
+
+.input {
+  width: 20px;
+  max-width: 100%;
+  margin-top: 5px;
+}
+
+.rangeSlider {
+  margin-top: 15px;
+}

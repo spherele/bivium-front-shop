@@ -1,0 +1,91 @@
+.contactsItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsItem {
+  font-family: var(--font-montserrat);
+  font-size: 24px;
+  color: #3d4143;
+}
+
+.contactsItemTitle {
+  font-weight: 400;
+}
+
+.contactsItemValue {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.contactsButton {
+  display: flex;
+  justify-content: center;
+  padding-inline: 40px !important;
+  margin: 40px auto 0 auto;
+
+  color: #dadada !important;
+  border-color: #dadada !important;
+}
+
+.vacancies {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 65px;
+  margin-top: 65px;
+}
+
+.vacanciesSectionTitle {
+  font-family: var(--font-montserrat);
+  font-size: 32px;
+  font-weight: 400;
+  color: #3d4143;
+}
+
+.vacanciesSectionBody {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.vacanciesItem {
+  font-family: var(--font-montserrat);
+}
+
+.vacanciesItemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vacanciesItemTitle {
+  font-weight: 600;
+  color: #3d4143;
+}
+
+.vacanciesItemSalary {
+  font-weight: 500;
+  color: #3d4143;
+}
+
+.vacanciesItemDescription {
+  margin-top: 10px;
+  font-weight: 400;
+  color: #979797;
+}
+
+@media (--tablet-media) {
+  .contactsItems {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .vacanciesItemHeader {
+    flex-direction: column;
+    align-items: unset;
+    row-gap: 5px;
+  }
+}

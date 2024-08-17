@@ -1,0 +1,51 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.sizeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  aspect-ratio: 1;
+
+  font-family: var(--font-fira-sans-extra-condensed), sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+
+  border: 2px solid #dadada;
+  border-radius: 7px;
+
+  color: #3d4143;
+  background-color: #fff;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.sizeButton:has(input:checked) {
+  color: #000;
+  border: 2px solid #000000;
+}
+
+.sizeButton:has(input:disabled) {
+  color: #dadada;
+  border-color: #dadada;
+  background-color: #979797;
+}
+
+.sizeButton input {
+  display: none;
+}
+
+@media (--tablet-media) {
+  .sizeButton {
+    width: 60px;
+    font-size: 23px;
+  }
+}

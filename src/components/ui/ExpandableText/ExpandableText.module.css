@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.text_expanded {
+  -webkit-line-clamp: unset;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #3d4143;
+  margin-left: auto;
+}

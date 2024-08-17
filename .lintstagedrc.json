@@ -1,0 +1,4 @@
+{
+  "src/*/**/*.{ts,tsx}": "eslint --ext .ts,.tsx --fix --max-warnings=0",
+  "*": "prettier --ignore-unknown --write"
+}

@@ -1,0 +1,11 @@
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-block: 40px;
+}
+
+@media (--tablet-media) {
+  .video {
+    margin-block: 20px;
+  }
+}

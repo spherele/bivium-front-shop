@@ -1,0 +1,12 @@
+.title {
+  font-size: 36px;
+  font-family: var(--font-montserrat), serif;
+  font-weight: 700;
+  color: #3d4143;
+}
+
+@media (--tablet-media) {
+  .title {
+    font-size: 24px;
+  }
+}

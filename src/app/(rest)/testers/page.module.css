@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  column-gap: 50px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.image {
+  width: 40%;
+}
+
+@media (--tablet-media) {
+  .button {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .body {
+    align-items: center;
+  }
+
+  .image {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+.wrapper {
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+.relatedProducts {
+  margin-top: 70px;
+}
+
+.deliveryInformation {
+  margin-top: 115px;
+}
+
+@media (--tablet-media) {
+  .wrapper {
+    padding-bottom: 45px;
+  }
+
+  .breadcrumbs {
+    text-align: center;
+  }
+
+  .relatedProducts {
+    margin-top: 30px !important;
+  }
+
+  .deliveryInformation {
+    display: none !important;
+  }
+}

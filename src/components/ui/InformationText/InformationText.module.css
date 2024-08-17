@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #3d4143;
+}
+
+.wrapper svg {
+  flex-shrink: 0;
+  color: #000;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  width: fit-content;
+
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #3d4143;
+}
+
+.crumb {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
